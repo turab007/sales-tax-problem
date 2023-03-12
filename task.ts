@@ -1,6 +1,7 @@
 import { Item } from "./item.model";
+import { generateReceipt } from "./functions";
 
-// Example usage
+// Example input
 const basket1: Item[] = [
   { name: "1 book", price: 12.49, isImported: false, isExempt: true },
   { name: "1 music CD", price: 14.99, isImported: false, isExempt: false },
@@ -48,3 +49,12 @@ const basket3: Item[] = [
     isExempt: true,
   },
 ];
+
+console.log("Output 1:");
+generateReceipt(basket1);
+
+console.log("\nOutput 2:");
+generateReceipt(basket2);
+
+console.log("\nOutput 3:");
+generateReceipt(basket3);
